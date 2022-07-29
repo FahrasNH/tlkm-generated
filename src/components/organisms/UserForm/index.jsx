@@ -2,7 +2,7 @@ import React from 'react'
 
 const UserForm = () => {
   return (
-    <form>
+    <form className="mx-[20%]">
       <div className="mb-6">
         <label
           htmlFor="fullName"
@@ -93,6 +93,7 @@ const UserForm = () => {
           required
         />
       </div>
+      <div className="w-full border-b border-gray-300 mt-8 mb-5" />
       <div className="flex justify-between">
         <div className="flex">
           <button
