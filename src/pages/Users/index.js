@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import UserForm from '../../components/organisms/UserForm'
 import UserList from '../../components/organisms/UserList'
 
@@ -35,7 +35,7 @@ const Users = () => {
         </div>
         <div className="relative flex justify-center">
           <span
-            className="bg-white px-4 text-lg text-[#979797]"
+            className="bg-white px-4 text-lg text-[#979797] cursor-pointer"
             onClick={() => setData([])}
           >
             Clear All List User
