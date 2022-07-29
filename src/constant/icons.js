@@ -1,15 +1,28 @@
-import icNext from '../assets/icons/ic-next.svg'
-import icOval from '../assets/icons/ic-oval.svg'
-import icPath from '../assets/icons/ic-path.svg'
-import icProfile from '../assets/icons/ic-profile.png'
-import icButtonLeft from '../assets/icons/ic-buttonLeft.svg'
-import icButtonRight from '../assets/icons/ic-buttonRight.svg'
+/* eslint-disable import/no-anonymous-default-export */
+import calendarAct from '../assets/icons/calendar-act.svg'
+import calendar from '../assets/icons/calendar.svg'
+import lockAct from '../assets/icons/lock-act.svg'
+import lock from '../assets/icons/lock.svg'
+import mapAct from '../assets/icons/map-act.svg'
+import map from '../assets/icons/map.svg'
+import mobileAct from '../assets/icons/mobile-act.svg'
+import mobile from '../assets/icons/mobile.svg'
+import smsAct from '../assets/icons/sms-act.svg'
+import sms from '../assets/icons/sms.svg'
+import userTagAct from '../assets/icons/user-tag-act.svg'
+import userTag from '../assets/icons/user-tag.svg'
 
 export default {
-  icNext,
-  icOval,
-  icPath,
-  icProfile,
-  icButtonLeft,
-  icButtonRight,
+  calendarAct,
+  calendar,
+  lockAct,
+  lock,
+  mapAct,
+  map,
+  mobileAct,
+  mobile,
+  smsAct,
+  sms,
+  userTagAct,
+  userTag,
 }

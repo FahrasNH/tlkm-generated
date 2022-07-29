@@ -1,11 +1,6 @@
-import illRobo1 from '../assets/images/ill-robo1.png'
-import illRobo2 from '../assets/images/ill-robo2.png'
-import illRobo3 from '../assets/images/ill-robo3.png'
-import illSectionBanner from '../assets/images/ill-sectionBanner.svg'
+/* eslint-disable import/no-anonymous-default-export */
+import illEmpty from '../assets/images/empty.png'
 
 export default {
-  illRobo1,
-  illRobo2,
-  illRobo3,
-  illSectionBanner,
+  illEmpty,
 }
