@@ -3,9 +3,19 @@ import UserForm from '../../components/organisms/UserForm'
 import UserList from '../../components/organisms/UserList'
 
 const Users = () => {
-  // const [data, setData] = useState([])
+  const [data, setData] = useState([])
 
-  useEffect(() => {}, [])
+  const handleClick = async () => {
+    try {
+      fetch('https://randomuser.me/api/')
+        .then((res) => res.json())
+        .then((data) => {
+          setData((oldData) => [...oldData, ...data.results])
+        })
+    } catch (error) {
+      console.error(error)
+    }
+  }
 
   return (
     <div className="mx-8">
@@ -18,18 +28,21 @@ const Users = () => {
           share.
         </p>
       </div>
-      <UserForm />
+      <UserForm handleGenerateUser={handleClick} />
       <div className="relative py-4 my-12">
         <div className="absolute inset-0 flex items-center">
           <div className="w-full border-b border-gray-300"></div>
         </div>
         <div className="relative flex justify-center">
-          <span className="bg-white px-4 text-lg text-[#979797]">
+          <span
+            className="bg-white px-4 text-lg text-[#979797]"
+            onClick={() => setData([])}
+          >
             Clear All List User
           </span>
         </div>
       </div>
-      <UserList />
+      <UserList data={data} />
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const UserForm = () => {
+const UserForm = ({ handleGenerateUser }) => {
   return (
     <form className="mx-[20%]">
       <div className="mb-6">
@@ -111,6 +111,7 @@ const UserForm = () => {
         </div>
         <div>
           <button
+            onClick={handleGenerateUser}
             type="submit"
             className="font-normal rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center text-[#4338CA] bg-[#E0E7FF]"
           >

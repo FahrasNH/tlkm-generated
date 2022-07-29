@@ -1,10 +1,14 @@
 import React from 'react'
 import CardUser from '../../molecules/CardUser'
 
-const UserList = () => {
+const UserList = ({ data }) => {
   return (
-    <div>
-      <CardUser />
+    <div className="mb-12 flex flex-wrap mx-auto">
+      {(data || []).map((dataUser) => (
+        <div key={dataUser.id.value} className=" px-4 sm:px-6 lg:px-4 py-12 ">
+          <CardUser />
+        </div>
+      ))}
     </div>
   )
 }
