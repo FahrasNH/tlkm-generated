@@ -6,7 +6,7 @@ const UserList = ({ data }) => {
     <div className="mb-12 flex flex-wrap mx-auto">
       {(data || []).map((dataUser) => (
         <div key={dataUser.id.value} className=" px-4 sm:px-6 lg:px-4 py-12 ">
-          <CardUser />
+          <CardUser data={dataUser} />
         </div>
       ))}
     </div>
