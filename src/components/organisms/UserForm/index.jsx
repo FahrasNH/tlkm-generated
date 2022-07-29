@@ -59,7 +59,7 @@ const UserForm = ({ handleGenerateUser }) => {
         <div>
           <button
             onClick={handleGenerateUser}
-            type="submit"
+            type="button"
             className="font-normal rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center text-[#4338CA] bg-[#E0E7FF]"
           >
             Auto Generate
