@@ -1,98 +1,45 @@
 import React from 'react'
+import Input from '../../atoms/Input'
 
 const UserForm = ({ handleGenerateUser }) => {
   return (
     <form className="mx-[20%]">
-      <div className="mb-6">
-        <label
-          htmlFor="fullName"
-          className="block mb-2 text-sm font-medium text=[#374151]"
-        >
-          Full Name
-        </label>
-        <input
-          type="text"
-          id="fullName"
-          className="w-full p-2.5 border border-[#D1D5DB] rounded-lg focus:ring-sky-500 focus:border-sky-500"
-          placeholder="Your Name"
-          required
-        />
-      </div>
-      <div className="mb-6">
-        <label
-          htmlFor="email"
-          className="block mb-2 text-sm font-medium text=[#374151]"
-        >
-          Email address
-        </label>
-        <input
-          type="email"
-          id="email"
-          className="w-full p-2.5 border border-[#D1D5DB] rounded-lg focus:ring-sky-500 focus:border-sky-500"
-          placeholder="Your Name"
-          required
-        />
-      </div>
-      <div className="mb-6">
-        <label
-          htmlFor="dob"
-          className="block mb-2 text-sm font-medium text=[#374151]"
-        >
-          Date of Birth
-        </label>
-        <input
-          type="text"
-          id="dob"
-          className="w-full p-2.5 border border-[#D1D5DB] rounded-lg focus:ring-sky-500 focus:border-sky-500"
-          placeholder="dd/mm/yy"
-          required
-        />
-      </div>
-      <div className="mb-6">
-        <label
-          htmlFor="dob"
-          className="block mb-2 text-sm font-medium text=[#374151]"
-        >
-          Address
-        </label>
-        <input
-          type="text"
-          id="dob"
-          className="w-full p-2.5 border border-[#D1D5DB] rounded-lg focus:ring-sky-500 focus:border-sky-500"
-          placeholder="Street Address"
-          required
-        />
-      </div>
-      <div className="mb-6">
-        <label
-          htmlFor="phoneNo"
-          className="block mb-2 text-sm font-medium text=[#374151]"
-        >
-          Phone Number
-        </label>
-        <input
-          type="text"
-          id="phoneNo"
-          className="w-full p-2.5 border border-[#D1D5DB] rounded-lg focus:ring-sky-500 focus:border-sky-500"
-          placeholder="e.g 813 2811 2993"
-          required
-        />
-      </div>
-      <div className="mb-6">
-        <label
-          htmlFor="password"
-          className="block mb-2 text-sm font-medium text=[#374151]"
-        >
-          Password
-        </label>
-        <input
-          type="password"
-          id="password"
-          className="w-full p-2.5 border border-[#D1D5DB] rounded-lg focus:ring-sky-500 focus:border-sky-500"
-          placeholder="**********"
-          required
-        />
-      </div>
+      <Input
+        label="Full Name"
+        type="text"
+        id="fullName"
+        placeholder="Your Name"
+      />
+      <Input
+        label="Email address"
+        type="email"
+        id="email"
+        placeholder="Your Email"
+      />
+      <Input
+        label="Date of Birth"
+        type="text"
+        id="dob"
+        placeholder="dd/mm/yy"
+      />
+      <Input
+        label="Address"
+        type="text"
+        id="address"
+        placeholder="Street Address"
+      />
+      <Input
+        label="Phone Number"
+        type="text"
+        id="phoneNo"
+        placeholder="e.g 813 2811 2993"
+      />
+      <Input
+        label="Password"
+        type="password"
+        id="password"
+        placeholder="**********"
+      />
       <div className="w-full border-b border-gray-300 mt-8 mb-5" />
       <div className="flex justify-between">
         <div className="flex">
